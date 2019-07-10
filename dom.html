@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>定时器示例</title>
+  </head>
+  <body>
+  
+  用户名：<input type="text"  id="username"><br>
+  密码：<input type="password" id="password"><br>
+  <input type="button" onclick="start()" value="登录" >
+ 
+  
+  <script>
+  
+
+
+    function start(){
+        var user = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if(password != 123){
+            alert("密码不正确，请重新输入");
+            document.getElementById("password").value="";   
+        }else{
+            alert("密码正确！");
+        }
+    }
+  </script>
+  </body>
+  </html>
